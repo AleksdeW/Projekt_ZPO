@@ -1,0 +1,38 @@
+Projekt automat z napojami/bankomat
+
+- wczytujemy zawartość automatu z pliku -> nazwa, ilość, cena
+- może być max. 5 (ilość) danego produktu
+- jak chcemy więcej danego produktu trzeba to podzielić na 2/3 wiersze na liście (tak jak mamy szufladki w faktycznym automacie), może robi się to automatycznie, ale chyba będzie trudniejsze
+- maksymalna liczba "szufladek"
+- wybieranie produktu przez klawiaturę (123456789, OK, DEL)
+- każdy produkt ma inny numer
+- automatyczne przypisanie numeru do produktu (albo już od razu w pliku)
+- po wczytaniu listy produktów pojawiają się one na liście produktów
+- 4 guziki z wartościami monet jakie wrzucamy (0.5, 1, 2, 5)
+- wydawanie reszty
+- jak wpiszemy konkretną sekwencję na klawiaturze to dostajemy wszystko ("jackpot", np. 2137, 67, 69)
+- z innego pliku dajemy liczbę konkretnych monet
+- jak na przykład się skończy dana moneta to informacja "nie można wydać reszty" -> do ustalenia, czy to robimy
+- ewentualnie jak nie może wydać reszty to komunikat "UWAGA, automat nie wydaje reszty, wrzuć dokładną kwotę" ->do ustalenia, czy to robimy
+- guzik "KUPUJE" do potwierdzenia zakupu
+- jak się skończy jakiś produkt/moneta to jest zapis do innego pliku (raport), że brak, uzupełnij
+- jak się skończy jakiś produkt to zamiast ceny pisze "brak produktu"
+- może jak klient kliknie KUPUJE to jakiś pasek ładowania ("ładowanie...")
+- może jakaś historia sprzedaży w innym pliku (dla właściciela)
+
+KLIENT
+- komunikat "podaj numer produktu"
+- wpisuje wartość odpowiadającą konkretnemu produktowi
+- klika OK, na potwierdzenie
+- klika DLE, jak chce jednak zmienić wartość
+- dodaje konkretne monety
+- guzik ZWROT, jeżeli jednak się rozmyśli
+- klika KUPUJĘ
+- jak za mało pieniędzy, komunikat "za mało środków"
+- jak za dużo pieniędzy, komunikat "Gotowe, reszta: ..."
+
+
+WŁAŚCICIEL
+- podaje w pliku listę produktów (nazwa, ilość, cena)
+- podaje w pliku liczbę konkretnych monet ("0.5":5, "1":5, "2":5, "5":5)
+- w innym pliku dostaje informacje o braku monet lub produktu (może nawet z datą i godziną, "raport")
