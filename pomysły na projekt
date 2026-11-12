@@ -10,7 +10,7 @@ Projekt automat z napojami/bankomat
 - po wczytaniu listy produktów pojawiają się one na liście produktów
 - 4 guziki z wartościami monet jakie wrzucamy (0.5, 1, 2, 5)
 - wydawanie reszty
-- jak wpiszemy konkretną sekwencję na klawiaturze to dostajemy wszystko ("jackpot", np. 2137, 67, 69)
+- jak wpiszemy konkretną sekwencję na klawiaturze to dostajemy wszystko ("jackpot", np. 2137, 67, 69) i wszystkie produkty znikają
 - z innego pliku dajemy liczbę konkretnych monet
 - jak na przykład się skończy dana moneta to informacja "nie można wydać reszty" -> do ustalenia, czy to robimy
 - ewentualnie jak nie może wydać reszty to komunikat "UWAGA, automat nie wydaje reszty, wrzuć dokładną kwotę" ->do ustalenia, czy to robimy
@@ -20,11 +20,13 @@ Projekt automat z napojami/bankomat
 - może jak klient kliknie KUPUJE to jakiś pasek ładowania ("ładowanie...")
 - może jakaś historia sprzedaży w innym pliku (dla właściciela)
 
+- może po wpisaniu konkretnego kodu pojawia się  inny produkt np. alkohol
+
 KLIENT
 - komunikat "podaj numer produktu"
 - wpisuje wartość odpowiadającą konkretnemu produktowi
 - klika OK, na potwierdzenie
-- klika DLE, jak chce jednak zmienić wartość
+- klika DEL, jak chce jednak zmienić wartość
 - dodaje konkretne monety
 - guzik ZWROT, jeżeli jednak się rozmyśli
 - klika KUPUJĘ
