@@ -1,0 +1,39 @@
+KLASY I METODY - AUTOMAT
+
+1. AutomatException(Exception) - klasa
+- ZaMaloSrodkowException -> gdy nie damy pieniędzy, kwota mniejsza niż cena
+- BrakProduktuException -> gdy 0 produktu
+- BrakResztyException -> gdy brak odpowiednich monet
+- NiepoprawnyNumerException -> gdy wpisze numeru, którego nie ma na liście
+
+2. Szufladka - klasa
+- podaj_status() -> podaje na ekranie produkt, cenę, liczbę
+- czy_pusta() -> sprawdza, czy szufladka pusta
+- wydaj_produkt() -> odejmuje 1 od liczby produktu lub daje błąd
+
+3. BazaSzufladek - klasa
+- wczytaj_z_pliku() -> pobiera z pliku produkty, dzieli na szufladki
+- podaj_produkty() -> podaje listę produktów, cen, ilość
+- pobierz_szufladke() -> znajduje szufladkę w liście
+
+4. Kasa - klasa
+- wczytaj_monety() -> wczytuje monety z pliku
+- zwrot() -> oddaje to co dał klient
+- kup() -> sprawdza, czy dano wystarczająco monet, liczy resztę, dodaje pieniądze do kasy
+- wrzuc_monete() -> zlicza wrzucone monety
+- czy_mozna_wydac_reszte() -> sprawdza, czy można wydać resztę
+
+5. Klawiatura - klasa
+- ok() -> potwierdzenie 
+- cofnij()		<-zmieniona nazwa
+- sprawdz_jackpot()
+- dopisz_znak()
+
+6. Raport - klasa
+- zapisz_brak() -> zapisuje do pliku raportu datę, godzinę i informację o braku produktu lub monety
+- zapisz_sprzedaz() -> dopisuje transakcję do historii sprzedaży
+
+7. Automat - klasa BAZOWA
+- uruchom() -> wczytuje listę produktów, monet, wyświetla listę produktów, uruchamia główną pętlę
+- guzik() -> odbiera kliknięcia
+- kupuje() -> uruchamia się po kliknięciu kupuję
