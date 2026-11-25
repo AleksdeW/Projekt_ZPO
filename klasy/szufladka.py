@@ -40,7 +40,7 @@ class Szufladka:
         if self.czy_pusta():
             return f"{self._numer_szufladki}. {self._nazwa_produktu} - brak produktu"
 
-        return  f"{self._numer_szufladki}. {self._nazwa_produktu} -{self._cena:} zł {self._ilosc} szt."
+        return  f"{self._numer_szufladki}. {self._nazwa_produktu} - {self._cena:.2f} zł ({self._ilosc} szt.)"
 
     def wydaj_produkt(self):
         if self.czy_pusta():
