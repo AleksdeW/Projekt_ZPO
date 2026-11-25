@@ -1,4 +1,5 @@
-| Plik/fragment | Narzędzie | Do czego użyto i jak zweryfikowano |
+| Plik/fragment | Narzędzie | Do czego użyto |
 | :--- | :--- | :--- |
-| lista_klas | Gemini | weryfikacja sensu ułożenia klas i metod |
-| diagram klas | Gemini | pomoc w stworzeniu diagramu klas |
+| docs/lista_klas | Gemini | weryfikacja sensu ułożenia klas i metod |
+| dosc/diagram klas | Gemini | pomoc w stworzeniu diagramu klas |
+|tests/test_szufladka | Gemini | pomoc w dobraniu przypadków testowych i składni |
