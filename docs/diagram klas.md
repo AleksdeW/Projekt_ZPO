@@ -19,8 +19,8 @@ classDiagram
     }
 
     class Szufladka {
-        -int numer
-        -str nazwa
+        -int numer_produktu
+        -str nazwa_produktu
         -float cena
         -int ilosc
         +podaj_status() str
