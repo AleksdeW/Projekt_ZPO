@@ -58,7 +58,7 @@ def test_podaj_produkty():
 #sprawdzenie, czy metoda dobrze dzieli produkty na szufladki
 def test_wczytanie_z_pliku():
     baza = BazaSzufladek()
-    baza.wczytaj_z_pliku("data/produkty.json")
+    baza.wczytaj_z_pliku("dane/produkty.json")
 
     assert len(baza.podaj_produkty()) == 5 #szufladki
     assert baza.pobierz_szufladke(3).ilosc == 2
