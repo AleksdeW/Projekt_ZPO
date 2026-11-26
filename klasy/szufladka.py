@@ -1,3 +1,5 @@
+from klasy.wyjatki import BrakProduktuException
+
 class Szufladka:
     def __init__(self, numer_szufladki, nazwa_produktu, cena, ilosc):
 
