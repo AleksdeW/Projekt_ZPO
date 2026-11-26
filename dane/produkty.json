@@ -1,0 +1,5 @@
+[
+  {"nazwa": "Cola", "ilosc": 12, "cena": 4.50},
+  {"nazwa": "Woda", "ilosc": 5, "cena": 2.50},
+  {"nazwa": "Baton", "ilosc": 3, "cena": 3.00}
+]
